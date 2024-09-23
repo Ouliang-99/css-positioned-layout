@@ -1,1 +1,84 @@
 /* Start coding here */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sarabun";
+}
+
+header {
+  background-color: #757575;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+main div {
+}
+.mychat {
+  background-color: #00b300;
+
+  right: 0;
+}
+
+.mychat_grey {
+  background-color: rgb(196, 196, 196);
+
+  right: 0;
+}
+
+.yourchat {
+  background-color: rgb(129, 129, 129);
+
+  right: 0;
+}
+
+.to_me,
+.to_you {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  position: relative;
+
+}
+
+.to_you{
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.to_me{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.to_me .yourchat, .to_you .mychat_grey,
+.to_you .mychat {
+  height: 50px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+  width: 10%;
+  
+  margin-left: 20px;
+  margin-right: 20px;
+  
+}
+
+.close_x{
+    width: 20px;
+    position: absolute;
+    background-color: rgba(0, 0,0, 0.5);
+    border-radius: 10px;
+    top: 55px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+

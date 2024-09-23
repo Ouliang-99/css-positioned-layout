@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bubble with Curved Tail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .chat-container {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .chat-bubble {
+            background-color: #00C800;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 15px;
+            position: relative;
+            max-width: 250px;
+            font-size: 16px;
+        }
+
+        .chat-bubble::before {
+            content: '';
+            position: absolute;
+            top: 10px; /* Move down slightly for a natural curve look */
+            right: -20px;
+            width: 20px;
+            height: 20px;
+            background-color: #00C800;
+            border-radius: 50%;
+            box-shadow: 10px -10px 0 0 #00C800;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-bubble">
+            สวัสดีจ้า
+        </div>
+    </div>
+</body>
+</html>

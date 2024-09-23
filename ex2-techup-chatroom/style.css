@@ -49,6 +49,32 @@ header {
   border-radius: 30px;
 }
 
+.bubble-tail1 {
+  position: absolute;
+  background-color: greenyellow;
+  top: 180px;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bubble-tail2 {
+  position: absolute;
+  background-color: white;
+  top: 165px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
 .your-message {
   display: flex;
   flex-direction: column;
@@ -81,7 +107,7 @@ header {
 .circle {
   position: absolute;
   background-color: rgb(146, 146, 146);
-  top: 40%;
+  top: 300px;
   width: 25px;
   height: 25px;
   border-radius: 25px;

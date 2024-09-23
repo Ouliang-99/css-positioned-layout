@@ -1,1 +1,88 @@
 /* Start coding here */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+nav {
+  padding: 10px;
+  color: white;
+  background-color: hsla(0, 100%, 0%, 50%);
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.box1,
+.box3 {
+  width: 150px;
+  height: 30px;
+  background-color: green;
+  border-radius: 30px;
+  padding: 5px;
+  position: absolute;
+}
+
+.box1 {
+  top: 20px;
+  right: 10px;
+}
+
+.box3 {
+  top: 100px;
+  right: 10px;
+}
+
+.box2 {
+  width: 150px;
+  height: 30px;
+  background-color: rgb(219, 211, 211);
+  border-radius: 30px;
+  padding: 5px;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+}
+
+.box2-popup {
+  color: white;
+  background-color: rgb(151, 146, 146);
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  z-index: 1;
+}
+
+.box4,
+.box5 {
+  width: 150px;
+  height: 30px;
+  background-color: rgb(102, 99, 99);
+  border-radius: 30px;
+  padding: 5px;
+  position: absolute;
+}
+
+.box4 {
+  top: 140px;
+  left: 10px;
+}
+
+.box5 {
+  top: 180px;
+  left: 10px;
+}
